@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    -
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"   crossorigin="anonymous">
+    <!-- site css file placed after bootstrap files to enable overriding of bootstrap styles --> 
+    <link rel="stylesheet" href="style.css"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src='../js/Scripts/jquery-ui-1.8.13.custom.min.js'></script> 
+</head>
+<body>
+    <form id="frmCalc"> 
+        <h1>Calculator</h1>
+        <main class="center-block">
+            <div id="merkaz"> 
+                <div class="form-group">
+                    <label class="input-description">Number 1:</label>
+                    <input type="number"  class="form-control" name="leadName" placeholder="Enternumber">
+                    <label  class="input-description">Number 2:</label>
+                    <input type="number"  class="form-control" name="leadPhone" placeholder="Enternumber" >
+                </div>
+                <div class="form-group">
+                    <label  class="input-description">Product:</label>
+                    <select id="ProductDDL"  class="form-control" name="product"  placeholder="Select Product" ></select>
+                </div>
+                <div class="form-group">
+                    <br><br>
+                    <button class="btnAdd btn btn-primary"  name="action" value="AddLead">Add Lead</button>
+                </div>
+                <div class="form-group">
+                    <label id="result" class="input-description"></label>
+                </div>
+            </div>
+        </main> 
+    </form> 
+    <!-- <script src='../js/validations.js'></script>  -->
+    <script src='calc.js'></script> 
+    
+</body>
+</html>
